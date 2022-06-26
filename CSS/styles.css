@@ -65,6 +65,8 @@ p {
 
 .header {
   border-bottom: 1px solid #ececec;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header .logo {
@@ -79,7 +81,6 @@ p {
 
 .logo.link {
   margin-right: 93px;
-  padding: 32px 0;
 }
 
 .header .logo:hover,
@@ -144,6 +145,8 @@ p {
 
 .hero {
   background-color: #2f303a;
+  min-height: 600px;
+  padding-top: 200px;
 }
 
 .hero-title {
@@ -159,7 +162,6 @@ p {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 200px;
 }
 
 .hero-button {
@@ -190,10 +192,14 @@ p {
 .hero-container {
   display: flex;
   flex-direction: column;
-  min-height: 600px;
 }
 
 /* preference */
+
+.preference {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .preference-title,
 .work-title,
@@ -204,10 +210,6 @@ p {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-}
-
-.team-title {
-  padding-top: 94px;
 }
 
 .preference-title,
@@ -225,17 +227,11 @@ p {
   overflow: hidden;
 }
 
-/* .work-title {
-  margin-top: 94px;
-} */
-
 .preference-list {
   display: flex;
   margin-right: auto;
   margin-left: auto;
   gap: 30px;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .preference-item {
@@ -262,17 +258,22 @@ p {
 
 /* work */
 
+.work {
+  padding-bottom: 94px;
+}
+
 .work-list {
   display: flex;
-  padding-top: 50px;
   justify-content: space-between;
-  padding-bottom: 94px;
+  margin-top: 50px;
 }
 
 /* team */
 
 .team {
   background-color: var(--secondary-bg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-item {
@@ -293,10 +294,9 @@ p {
 
 .team-list {
   display: flex;
-  padding-top: 50px;
+  margin-top: 50px;
   gap: 30px;
   text-align: center;
-  padding-bottom: 94px;
 }
 
 .team-item-p {
@@ -309,8 +309,13 @@ p {
 
 .footer {
   background-color: #2f303a;
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+
+/* .footer-container {
+
+} */
 
 .footer .logo {
   color: var(--secondary-text-color);
@@ -362,11 +367,15 @@ p {
 
 /* Portfolio */
 
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .portfolio-list-btn {
   display: flex;
   gap: 8px;
   justify-content: center;
-  padding-top: 94px;
 }
 
 .portfolio-list-img {
@@ -374,7 +383,6 @@ p {
   flex-wrap: wrap;
   gap: 30px;
   margin-top: 50px;
-  padding-bottom: 94px;
 }
 
 .portfolio-img-item {
