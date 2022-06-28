@@ -98,7 +98,7 @@ p {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding: 32px 0;
+  /* padding: 32px 0; */
 }
 
 .site-nav .current {
@@ -110,7 +110,7 @@ p {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding: 32px 0;
+  /* padding: 32px 0; */
   /* display: inline-block;
   align-items: center; */
 }
@@ -154,10 +154,10 @@ p {
   fill: currentColor;
 }
 
-.icon-mail:hover,
+/* .icon-mail:hover,
 .icon-phone:hover {
-  fill: var(--acceent-color);
-}
+  color: var(--acceent-color);
+} */
 
 /* hero */
 
@@ -210,11 +210,11 @@ p {
   padding: 10px 32px;
 }
 
-.hero-button:hover,
+/* .hero-button:hover,
 .hero-button:focus {
   background-color: var(--primary-bg-color);
   color: var(--acceent-color);
-}
+} */
 
 .hero-container {
   display: flex;
@@ -274,6 +274,10 @@ p {
   justify-content: center;
   width: 270px;
   height: 120px;
+
+  background-color: var(--secondary-bg-color);
+
+  margin-bottom: 30px;
 }
 
 /* .icons-preference {
@@ -293,7 +297,7 @@ p {
 
 .preference-item-p {
   line-height: 1.71;
-  padding-top: 10px;
+  margin-top: 10px;
 }
 
 .preference-container {
@@ -322,6 +326,9 @@ p {
 
 .team-item {
   background-color: var(--primary-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-text {
@@ -374,11 +381,10 @@ p {
 .team-link-item:hover,
 .team-link-item:focus {
   background-color: var(--acceent-color);
-  /* fill: var(--secondary-text-color); */
 }
 
-.team-link-item .social-links:hover,
-.team-link-item .social-links:focus {
+.team-link-item:hover .social-links,
+.team-link-item:focus .social-links {
   fill: var(--secondary-text-color);
 }
 
@@ -400,8 +406,12 @@ p {
   border-radius: 4px;
 }
 
-.clients-icons:hover,
-.clients-icons:focus {
+.clients-link {
+  padding: 16px 32px;
+}
+
+.clients-link:hover .clients-icons,
+.clients-link:focus .clients-icons {
   fill: var(--acceent-color);
 }
 
@@ -549,11 +559,12 @@ p {
   color: inherit;
 }
 
-/* .portfolio-link:hover {
+.portfolio-link:hover,
+.portfolio-link:focus {
+  display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
-} */
+}
 
 .portfolio-img-text {
   padding: 20px 24px;
